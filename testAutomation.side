@@ -1,0 +1,258 @@
+{
+  "id": "ad6263d1-71dd-4aa6-8402-794b8066c473",
+  "version": "2.0",
+  "name": "Exam",
+  "url": "https://d1dzr3dh7g0qgk.cloudfront.net/",
+  "tests": [{
+    "id": "90d8f254-273a-4a99-85df-8f1ef74e6b35",
+    "name": "1. . Landing Page Navigation Test",
+    "commands": [{
+      "id": "36343978-a126-41cc-a168-4525742903d1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4f5427a-835d-4273-8701-4839b1c0f9c0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "447543d2-6a66-40fb-a1ed-becbdf8edda4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[@class='mb-14 text-uppercase display-1']",
+      "targets": [],
+      "value": "TimeWise"
+    }, {
+      "id": "5d8f4c42-f9ea-487b-8893-67745f11ec86",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[@class='btn btn-outline-light btn-lg mt-5']",
+      "targets": [
+        ["css=.btn-outline-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarButtonsExample']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Users/Login')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": "Organize your time now!"
+    }, {
+      "id": "54f9b370-b0be-488a-978f-ff8fd8975204",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "40f6d21d-63ce-479d-8963-6e67e97e38a8",
+    "name": "2.LoginTest",
+    "commands": [{
+      "id": "670aab9a-cf49-41f3-9c62-0f538fe2caca",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5690e77-d4f2-4bcd-afd6-7084bfe82429",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "485103b6-ad62-44c6-bea9-862561269312",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='btn btn-outline-light btn-lg mt-5']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31e9f10f-28cb-4903-87ce-ab47e66411c2",
+      "comment": "",
+      "command": "click",
+      "target": "//a[text()='Login']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3a822ef-7e50-4035-bcef-c7e4136f7563",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": "Nikola@Nikola"
+    }, {
+      "id": "18762cda-ebab-4bf0-bd25-79dea66ea68c",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": "Nikola"
+    }, {
+      "id": "012dd786-44f8-4880-ae11-0e17ae82c04c",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@class='btn btn-primary btn-block mb-4']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c267163b-ba5f-406a-8055-d836a1186bc5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[@class=\"list-group-item list-group-item-action py-2 ripple\"]//span[text()='To-do']",
+      "targets": [],
+      "value": "To-do"
+    }, {
+      "id": "88d94a04-d0c1-4f01-9ad0-8105e5a0687d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[@class=\"list-group-item list-group-item-action py-2 ripple\"]//span[text()='In Progress']",
+      "targets": [],
+      "value": "In Progress"
+    }, {
+      "id": "e5d2f202-df08-44d4-8af1-d5e57fd018df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[@class=\"list-group-item list-group-item-action py-2 ripple\"]//span[text()='Done']",
+      "targets": [],
+      "value": "Done"
+    }, {
+      "id": "863d8313-50d6-4f8b-ae07-045a014d82f8",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class=\"list-group-item list-group-item-action py-2 ripple\"]//span[text()='Logout']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8dcc44bd-6f48-4720-9b10-a4b58ab680ae",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//h1[@class='mb-14 text-uppercase display-1']",
+      "targets": [],
+      "value": "TimeWise"
+    }, {
+      "id": "573b8f19-4701-4f44-b199-9326d3e0551e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b0b9048-89ea-4a54-b0db-2f5a5053e78f",
+    "name": "3.View Profile Test",
+    "commands": [{
+      "id": "636770b6-3c9e-403f-90c5-7ec2376b3361",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a898230b-9e97-487f-b02f-240532718161",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1100x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "baf13222-feab-429c-a69d-b843d208b90c",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class='btn btn-outline-light btn-lg mt-5']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fb9f3a5-9d6e-4d61-8718-ea4dd3d869f9",
+      "comment": "",
+      "command": "click",
+      "target": "//a[text()='Login']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "968e78ff-ffe9-4301-96a5-8257b38ed4dd",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='email']",
+      "targets": [],
+      "value": "Nikola@Nikola"
+    }, {
+      "id": "969a2565-ed34-487a-bf63-4d099d65eb14",
+      "comment": "",
+      "command": "type",
+      "target": "//input[@type='password']",
+      "targets": [],
+      "value": "Nikola"
+    }, {
+      "id": "5cabd3d1-50d9-4037-9ab4-0a331789ee4f",
+      "comment": "",
+      "command": "click",
+      "target": "//button[@class='btn btn-primary btn-block mb-4']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "71c2c66d-4603-4c00-9b69-6f99572f9c66",
+      "comment": "",
+      "command": "click",
+      "target": "//img[@class='rounded-circle']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17f824f8-c426-469e-988a-25d592f21e2b",
+      "comment": "",
+      "command": "click",
+      "target": "//a[text()='My profile']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ad707fe-4e7c-4647-8823-e4167c31117b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//button[@class='btn btn-primary btn-rounded btn-lg']",
+      "targets": [],
+      "value": "Edit Profile Info           "
+    }, {
+      "id": "10fe594a-d35b-438f-a4da-d9faec135304",
+      "comment": "",
+      "command": "click",
+      "target": "//a[@class=\"list-group-item list-group-item-action py-2 ripple\"]//span[text()='Logout']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7627b4bb-e1ed-4264-a4c6-bb98faa32972",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "//a[@class='btn btn-outline-light btn-lg mt-5']",
+      "targets": [
+        ["css=.btn-outline-info", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarButtonsExample']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Users/Login')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": "Organize your time now!"
+    }, {
+      "id": "97896a7a-fc2b-4e34-a01a-073166c63e80",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "70a40f47-dd8f-4630-aa14-93eddd681130",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:83/", "http://softuni-qa-loadbalancer-2137572849.eu-north-1.elb.amazonaws.com:85/", "https://d1dzr3dh7g0qgk.cloudfront.net/"],
+  "plugins": []
+}
